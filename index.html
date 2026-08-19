@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optik Vision | Kejelasan Mata Anda, Prioritas Kami</title>
+    <meta name="description" content="Optik Vision — optik keluarga sejak 2010. Periksa mata gratis, koleksi bingkai untuk orang tua & anak muda, lensa bergaransi resmi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Fraunces:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo"><span class="logo-mark"></span> Optik Vision</a>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#koleksi">Koleksi</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
+            <li><a href="hub.html" class="btn" style="padding:10px 22px;">Janji Temu</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">Optik Keluarga · Sejak 2010</span>
+            <h1>Lihat Lebih Tajam,<br>Tampil <span class="accent-serif">Lebih Percaya Diri</span></h1>
+            <p>Dari pemeriksaan mata untuk orang tua hingga bingkai kekinian untuk anak muda — Optik Vision melayani seluruh keluarga dengan teknologi modern dan sapaan yang hangat.</p>
+            <div class="hero-cta">
+                <a href="hub.html" class="btn">Booking Periksa Mata</a>
+                <a href="#koleksi" class="btn outline">Lihat Koleksi</a>
+            </div>
+            <div class="hero-trust">
+                <div><strong>15+</strong><span>Tahun Melayani</span></div>
+                <div><strong>100%</strong><span>Lensa Bergaransi</span></div>
+                <div><strong>Semua</strong><span>Usia & Gaya</span></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="img/foto1.jpg" alt="Koleksi kacamata Optik Vision">
+            <div class="hero-streak"></div>
+            <div class="hero-badge"><i class="fas fa-shield-alt"></i> Garansi Resmi Setiap Lensa</div>
+        </div>
+    </section>
+
+    <section id="layanan" class="features">
+        <div class="feature-card">
+            <i class="fas fa-eye"></i>
+            <h3>Periksa Mata Gratis</h3>
+            <p>Konsultasi dengan refraksionis berpengalaman menggunakan peralatan modern — nyaman untuk segala usia.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-glasses"></i>
+            <h3>Brand Premium</h3>
+            <p>Berbagai pilihan bingkai internasional, dari model klasik elegan hingga desain sporty terkini.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Garansi Lensa</h3>
+            <p>Perlindungan resmi untuk kenyamanan dan daya tahan lensa Anda sehari-hari.</p>
+        </div>
+    </section>
+
+    <section id="koleksi" class="section">
+        <div class="section-title">
+            <span class="eyebrow">Koleksi Unggulan</span>
+            <h2>Bingkai untuk Setiap<br>Karakter & Generasi</h2>
+            <p class="section-lead">Pilih bingkai yang sesuai dengan bentuk wajah dan gaya Anda — tersedia untuk pria, wanita, hingga si kecil.</p>
+            <div class="filter-row">
+                <button class="filter-btn active" onclick="filterSelection('all')">Semua</button>
+                <button class="filter-btn" onclick="filterSelection('pria')">Pria</button>
+                <button class="filter-btn" onclick="filterSelection('wanita')">Wanita</button>
+                <button class="filter-btn" onclick="filterSelection('anak')">Anak-anak</button>
+            </div>
+        </div>
+
+        <div class="carousel" aria-roledescription="carousel">
+            <button class="carousel-control prev" aria-label="Sebelumnya">‹</button>
+            <div class="carousel-track-wrapper">
+                <ul class="carousel-track">
+                    <li class="carousel-slide">
+                        <div class="product-card pria">
+                            <img src="img/foto1.jpg" alt="Kacamata Pria">
+                            <div class="product-info">
+                                <span>Pria</span>
+                                <h4>Aviator Classic Silver</h4>
+                                <p>Rp 1.250.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card wanita">
+                            <img src="img/foto2.jfif" alt="Kacamata Wanita">
+                            <div class="product-info">
+                                <span>Wanita</span>
+                                <h4>Cat Eye Rose Gold</h4>
+                                <p>Rp 1.500.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card anak">
+                            <img src="img/foto3.jpg" alt="Kacamata Anak">
+                            <div class="product-info">
+                                <span>Anak</span>
+                                <h4>Flexi Blue Kids</h4>
+                                <p>Rp 850.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card pria">
+                            <img src="img/foto4.jpg" alt="Kacamata Pria">
+                            <div class="product-info">
+                                <span>Pria</span>
+                                <h4>Wayfarer Matte Black</h4>
+                                <p>Rp 1.100.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card wanita">
+                            <img src="img/foto5.jpg" alt="Kacamata Wanita">
+                            <div class="product-info">
+                                <span>Wanita</span>
+                                <h4>Gently Morley</h4>
+                                <p>Rp 1.500.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card anak">
+                            <img src="img/foto6.jfif" alt="Kacamata Anak">
+                            <div class="product-info">
+                                <span>Anak</span>
+                                <h4>Gently Kids</h4>
+                                <p>Rp 1.500.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card pria">
+                            <img src="img/produk-9630.jpeg" alt="Dior GX9630">
+                            <div class="product-info">
+                                <span>Pria</span>
+                                <h4>Dior GX9630 Square Frame</h4>
+                                <p>Rp 1.350.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card wanita">
+                            <img src="img/produk-81376.jpeg" alt="Kacamata 81376">
+                            <div class="product-info">
+                                <span>Wanita</span>
+                                <h4>Anti Blue Light 81376</h4>
+                                <p>Rp 950.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card wanita">
+                            <img src="img/produk-81373.jpeg" alt="Kacamata 81373">
+                            <div class="product-info">
+                                <span>Wanita</span>
+                                <h4>Anti Blue Light 81373</h4>
+                                <p>Rp 950.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card wanita">
+                            <img src="img/produk-5821.jpeg" alt="Kacamata TR90 5821">
+                            <div class="product-info">
+                                <span>Wanita</span>
+                                <h4>TR90 Cat Eye 5821</h4>
+                                <p>Rp 1.150.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card pria">
+                            <img src="img/produk-9629.jpeg" alt="Dior GX9629">
+                            <div class="product-info">
+                                <span>Pria</span>
+                                <h4>Dior GX9629 Round Frame</h4>
+                                <p>Rp 1.350.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card wanita">
+                            <img src="img/produk-8146.jpeg" alt="Kacamata TR90 8146">
+                            <div class="product-info">
+                                <span>Wanita</span>
+                                <h4>TR90 Round Frame 8146</h4>
+                                <p>Rp 1.050.000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="product-card wanita">
+                            <img src="img/produk-81357.jpeg" alt="Kacamata Dior 81357">
+                            <div class="product-info">
+                                <span>Wanita</span>
+                                <h4>Dior Anti Blue Light 81357</h4>
+                                <p>Rp 1.200.000</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-control next" aria-label="Berikutnya">›</button>
+        </div>
+    </section>
+
+    <section id="galeri" class="section" style="background:var(--paper-2);">
+        <div class="section-title">
+            <span class="eyebrow">Galeri</span>
+            <h2>Etalase & Koleksi Kami</h2>
+            <p class="section-lead">Intip lebih dekat koleksi bingkai andalan yang siap menemani gaya harian Anda dan keluarga — pria, wanita, hingga si kecil.</p>
+            <div class="filter-row">
+                <button class="filter-btn active" onclick="filterGallery('all', this)">Semua</button>
+                <button class="filter-btn" onclick="filterGallery('pria', this)">Pria</button>
+                <button class="filter-btn" onclick="filterGallery('wanita', this)">Wanita</button>
+                <button class="filter-btn" onclick="filterGallery('anak', this)">Anak-anak</button>
+            </div>
+            <a href="https://drive.google.com/drive/folders/10KsHiYDBAXwJogjZApVRdC-g3E8FqXEa?usp=sharing" target="_blank" rel="noopener" class="btn outline" style="margin-top:18px;">
+                <i class="fab fa-google-drive"></i> Lihat Semua Koleksi di Google Drive
+            </a>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item pria" onclick="openLightbox('img/foto1.jpg','Aviator Classic Silver')">
+                <img src="img/foto1.jpg" alt="Galeri kacamata pria 1">
+                <div class="gallery-caption"><i class="fas fa-expand"></i> Sporty Aviator Series</div>
+            </div>
+            <div class="gallery-item wanita" onclick="openLightbox('img/foto2.jfif','Cat Eye Rose Gold')">
+                <img src="img/foto2.jfif" alt="Galeri kacamata wanita 1">
+                <div class="gallery-caption"><i class="fas fa-expand"></i> Elegant Cat Eye</div>
+            </div>
+            <div class="gallery-item pria" onclick="openLightbox('img/foto4.jpg','Wayfarer Matte Black')">
+                <img src="img/foto4.jpg" alt="Galeri kacamata pria 2">
+                <div class="gallery-caption"><i class="fas fa-expand"></i> Wayfarer Everyday</div>
+            </div>
+            <div class="gallery-item wanita" onclick="openLightbox('img/foto5.jpg','Gently Morley')">
+                <img src="img/foto5.jpg" alt="Galeri kacamata wanita 2">
+                <div class="gallery-caption"><i class="fas fa-expand"></i> Gently Morley Series</div>
+            </div>
+            <div class="gallery-item anak" onclick="openLightbox('img/foto3.jpg','Flexi Blue Kids')">
+                <img src="img/foto3.jpg" alt="Galeri kacamata anak 1">
+                <div class="gallery-caption"><i class="fas fa-expand"></i> Ceria untuk Si Kecil</div>
+            </div>
+            <div class="gallery-item anak" onclick="openLightbox('img/foto6.jfif','Gently Kids')">
+                <img src="img/foto6.jfif" alt="Galeri kacamata anak 2">
+                <div class="gallery-caption"><i class="fas fa-expand"></i> Koleksi Anak</div>
+            </div>
+            <div class="gallery-item detail" onclick="openLightbox('img/foto9.jfif','Detail Frame Premium')">
+                <img src="img/foto9.jfif" alt="Galeri detail frame premium">
+                <div class="gallery-caption"><i class="fas fa-expand"></i> Detail Frame Premium</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+        <img id="lightbox-img" src="" alt="Tampilan galeri diperbesar">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <section class="section" style="background:var(--paper);">
+        <div class="section-title">
+            <span class="eyebrow">Testimoni</span>
+            <h2>Dipercaya Semua Generasi</h2>
+            <p class="section-lead">Dari orang tua yang butuh kenyamanan hingga anak muda yang mengejar gaya — begini cerita mereka.</p>
+        </div>
+        <div class="testimonials-row">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Pelayanannya ramah, stafnya sabar menjelaskan sampai saya paham ukuran lensa yang cocok untuk usia saya. Tidak buru-buru dan enak diajak konsultasi."</p>
+                <div class="testimonial-name">
+                    <div class="testimonial-avatar">R</div>
+                    <div><strong>Ibu Ratna</strong><span>54 Tahun · Guru</span></div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"Koleksi framenya kekinian banget, desainnya sporty tapi tetap classy — cocok dipakai kuliah maupun nongkrong sama teman-teman."</p>
+                <div class="testimonial-name">
+                    <div class="testimonial-avatar">K</div>
+                    <div><strong>Kevin Pratama</strong><span>22 Tahun · Mahasiswa</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lokasi" class="section lokasi-section">
+        <div class="section-title">
+            <span class="eyebrow">Lokasi & Kontak</span>
+            <h2>Kunjungi Toko Kami</h2>
+            <p class="section-lead">Datang langsung atau hubungi kami dulu untuk membuat janji periksa mata.</p>
+        </div>
+        <div class="lokasi-grid">
+            <div class="lokasi-info">
+                <div class="info-row">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Alamat Toko</h4>
+                        <p>Gunggungan Lor, Blok Cocong, Kec. Pakuniran, Kabupaten Probolinggo, Jawa Timur</p>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Jam Operasional</h4>
+                        <p>Setiap Hari, 08.00 – 17.00 WIB</p>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Telepon</h4>
+                        <p><a href="tel:+628139289933">(+62) 813-9289-933</a></p>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@optikvision.com">info@optikvision.com</a></p>
+                    </div>
+                </div>
+                <a href="https://wa.me/6281234567890" target="_blank" class="btn wa" style="align-self:flex-start;">
+                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                </a>
+            </div>
+            <div class="map-embed">
+                <iframe
+                    src="https://www.google.com/maps?q=-7.818854,113.49946039&hl=id&z=15&output=embed"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Optik Vision</h3>
+                <p>Solusi penglihatan terpercaya sejak 2010. Menggabungkan gaya dan kesehatan untuk seluruh keluarga — dari orang tua hingga anak muda.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/628139289933" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Navigasi</h4>
+                <div class="footer-links">
+                    <a href="#koleksi">Koleksi</a>
+                    <a href="#galeri">Galeri</a>
+                    <a href="#lokasi">Lokasi</a>
+                    <a href="hub.html">Janji Temu</a>
+                </div>
+            </div>
+            <div>
+                <h4>Kontak</h4>
+                <div class="footer-links">
+                    <a href="tel:+628139289933"><i class="fas fa-phone"></i> (+62) 813-9289-933</a>
+                    <a href="mailto:info@optikvision.com"><i class="fas fa-envelope"></i> info@optikvision.com</a>
+                    <a href="#lokasi"><i class="fas fa-map-marker-alt"></i> Lihat Alamat</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>&copy; 2026 Optik Vision. Semua hak dilindungi.</span>
+            <span>Dibuat dengan cermat untuk keluarga Indonesia.</span>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/628139289933" target="_blank" class="wa-float" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function filterSelection(category) {
+            const cards = document.getElementsByClassName("product-card");
+            const buttons = document.getElementsByClassName("filter-btn");
+            const labels = { all: 'semua', pria: 'pria', wanita: 'wanita', anak: 'anak-anak' };
+
+            for (let btn of buttons) {
+                if (btn.innerText.toLowerCase() === labels[category]) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            }
+
+            for (let card of cards) {
+                if (category === "all") {
+                    card.classList.remove("hide");
+                } else if (card.classList.contains(category)) {
+                    card.classList.remove("hide");
+                } else {
+                    card.classList.add("hide");
+                }
+            }
+        }
+    </script>
+
+    <script>
+        // Carousel implementation (lightweight, dependency-free)
+        (function () {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            const prevBtn = document.querySelector('.carousel-control.prev');
+            const nextBtn = document.querySelector('.carousel-control.next');
+            let currentIndex = 0;
+
+            function update() {
+                const slideWidth = slides[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).gap || 22);
+                const offset = -currentIndex * slideWidth;
+                track.style.transform = `translateX(${offset}px)`;
+            }
+
+            function showNext() {
+                if (currentIndex < slides.length - 1) currentIndex++;
+                else currentIndex = 0;
+                update();
+            }
+
+            function showPrev() {
+                if (currentIndex > 0) currentIndex--;
+                else currentIndex = slides.length - 1;
+                update();
+            }
+
+            nextBtn.addEventListener('click', showNext);
+            prevBtn.addEventListener('click', showPrev);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') showNext();
+                if (e.key === 'ArrowLeft') showPrev();
+            });
+
+            window.addEventListener('resize', () => setTimeout(update, 120));
+
+            const observer = new MutationObserver(() => {
+                slides.forEach((slide) => {
+                    const card = slide.querySelector('.product-card');
+                    slide.style.display = card.classList.contains('hide') ? 'none' : '';
+                });
+                const visible = slides.filter(s => s.style.display !== 'none');
+                if (visible.length === 0) return;
+                if (slides[currentIndex] && slides[currentIndex].style.display === 'none') {
+                    currentIndex = slides.indexOf(visible[0]);
+                }
+                update();
+            });
+            slides.forEach(s => observer.observe(s, { attributes: true, attributeFilter: ['style', 'class'], subtree: false }));
+
+            update();
+        })();
+    </script>
+
+    <script>
+        // Filter galeri berdasarkan kategori (pria/wanita/anak)
+        function filterGallery(category, btn) {
+            const items = document.querySelectorAll('#galeri .gallery-item');
+            const buttons = btn.parentElement.querySelectorAll('.filter-btn');
+
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hide');
+                } else {
+                    item.classList.add('hide');
+                }
+            });
+        }
+    </script>
+
+    <script>
+        // Lightbox galeri
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox').classList.add('show');
+        }
+        function closeLightbox(e) {
+            if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close') || e.target.tagName === 'I') {
+                document.getElementById('lightbox').classList.remove('show');
+            }
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('show');
+        });
+    </script>
+
+</body>
+</html>
